@@ -92,6 +92,7 @@
 	clear: left;
 	overflow: hidden;
   	position: fixed; 
+	z-index: 100;
   	top: 0; 
 	
 }
