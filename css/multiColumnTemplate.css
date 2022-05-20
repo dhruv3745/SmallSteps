@@ -127,6 +127,50 @@
 	color: #717070;
 	cursor: pointer;
 }
+.dropdown {
+  float: center;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: inherit;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .sectionHead{
 	width: 100%;
 	margin-top: 0px;
@@ -197,13 +241,16 @@
 	font-size: 120%;
 	font-weight: bolder;
 	color:#FFFFFF;
-	bordier:none;
+	border: none; 
+	border-radius: 2px;
 	transition: all 0.3s linear
 }
 
 .mainDonate:hover{
-	background-color:#9A0002;
+	background-color: #0D1E37;
 	cursor: pointer;
+	color:
+	
 }
 
 .right_article {
@@ -453,7 +500,7 @@ body {
 .upcoming{
 	float:center;
 	width: 40%;
-	height:1000px;
+	height:800px;
 	margin-top: 0px;
 	margin-right: 29%;
 	margin-bottom: 50px;
@@ -485,6 +532,12 @@ body {
 	display: block;
 	float: center;
 	background-color: #fcf4dd;
+	transition: all 0.3s linear
+}
+
+.upcomingBlock:hover{
+	opacity:70%;
+	cursor: pointer;
 }
 .upcomingTitle
 {
@@ -649,7 +702,8 @@ body {
 	height:auto;
 	transition: all 0.3s linear;
 	padding-left: 20%;
-	padding-top: 1 0px;
+	padding-top: 25px;
+	color: #C3C3C3;
 }
 .social_icon {
 	width: 5%;
